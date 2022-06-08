@@ -19,8 +19,8 @@
     tag.id = 'iframe-demo';
     tag.src = 'https://www.youtube.com/iframe_api';
     frame.setAttribute('height', Math.floor(frame.clientWidth * .6));
-    player.seekTo(0);
-    player.unMute();
+    frame.seekTo(0);
+    frame.unMute();
     cookieConsent.classList.add('hidden');
 
     function onYouTubeIframeAPIReady() {
