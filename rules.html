@@ -19,12 +19,9 @@
     tag.id = 'iframe-demo';
     tag.src = 'https://www.youtube.com/iframe_api';
     frame.setAttribute('height', Math.floor(frame.clientWidth * .6));
-    document.onLoad
-    cookieConsent.addEventListener('click', () => {
-        player.seekTo(0);
-        player.unMute();
-        cookieConsent.classList.add('hidden');
-    });
+    player.seekTo(0);
+    player.unMute();
+    cookieConsent.classList.add('hidden');
 
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('video-frame');
