@@ -1,0 +1,37 @@
+<head>
+    <title>you're such a sussy baka</title>
+    <meta content="Campbell's server rules." property="og:title" />
+    <meta content="Rules for the server campbell made." property="og:description" />
+    <meta content="https://campbellserver.com/rules/" property="og:url" />
+    <meta content="https://cdn.discordapp.com/icons/982545979666493461/035f6bb95e9b482462a843ef4541055f.webp?size=160" property="og:image" />
+    <meta content="#FF0000" data-react-helmet="true" name="theme-color" />
+</head>
+<body>
+  <div class="vid-div">
+    <div id="vid-blocker"></div>
+    <iframe id="video-frame" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&amp;enablejsapi=1&amp;autoplay=1&amp;mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" height="426"></iframe>
+  </div>
+  <script type="text/javascript">
+    var player;
+    var frame = document.querySelector('#video-frame');
+    var firstScriptTag = document.querySelector('script');
+    var tag = document.createElement('script');
+    tag.id = 'iframe-demo';
+    tag.src = 'https://www.youtube.com/iframe_api';
+    frame.setAttribute('height', Math.floor(frame.clientWidth * .6));
+    document.onLoad
+    cookieConsent.addEventListener('click', () => {
+        player.seekTo(0);
+        player.unMute();
+        cookieConsent.classList.add('hidden');
+    });
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('video-frame');
+    }
+
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  </script>
+</body>
+  
